@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
 import { MdRestaurantMenu } from "react-icons/md";
 import { FaCartShopping } from "react-icons/fa6";
@@ -8,22 +9,22 @@ export default function NavBar() {
   return (
     <nav className="fixed bottom-0 left-0 w-full bg-amber-400">
       <div className="flex">
-        <div className="nav-button">
+        <Link to="/" className="nav-button">
           <AiFillHome />
-          <a>Home</a>
-        </div>
-        <div className="nav-button">
+          <span>Home</span>
+        </Link>
+        <Link to="/menu" className="nav-button">
           <MdRestaurantMenu />
-          <a>Menu</a>
-        </div>
-        <div className="nav-button">
+          <span>Menu</span>
+        </Link>
+        <Link to="/cart" className="nav-button">
           <FaCartShopping />
-          <a>Cart</a>
-        </div>
-        <div className="nav-button">
+          <span>Cart</span>
+        </Link>
+        <Link to="/myorder" className="nav-button">
           <RiFileList3Fill />
-          <a>My Order</a>
-        </div>
+          <span>My Order</span>
+        </Link>
       </div>
     </nav>
   );

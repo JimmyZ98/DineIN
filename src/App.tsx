@@ -8,7 +8,7 @@ import MyOrder from "./pages/MyOrder/MyOrder";
 
 function App() {
   return (
-    <>
+    <div className="h-full">
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -16,7 +16,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/myorder" element={<MyOrder />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

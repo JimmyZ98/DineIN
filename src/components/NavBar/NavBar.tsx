@@ -7,7 +7,7 @@ import { RiFileList3Fill } from "react-icons/ri";
 
 export default function NavBar() {
   return (
-    <nav className="fixed bottom-0 left-0 w-full bg-amber-400">
+    <nav className="fixed bottom-0 left-0 w-full bg-amber-400 z-10">
       <div className="flex">
         <Link to="/" className="nav-button">
           <AiFillHome />

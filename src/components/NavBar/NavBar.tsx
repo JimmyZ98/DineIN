@@ -23,7 +23,7 @@ export default function NavBar() {
         </Link>
         <Link to="/myorder" className="nav-button">
           <RiFileList3Fill />
-          <span>My Order</span>
+          <span>Order</span>
         </Link>
       </div>
     </nav>

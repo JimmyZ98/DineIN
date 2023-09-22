@@ -8,7 +8,7 @@ import MyOrder from "./pages/MyOrder/MyOrder";
 
 function App() {
   return (
-    <div className="h-full">
+    <div>
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -12,11 +12,15 @@ export default function Home() {
         <img src={logo} alt="logo" width="300" className="rounded-full" />
         <div className="flex space-x-5 pb-20">
           <Link to="/menu" className="home-button">
-            <MdRestaurantMenu />
+            <div className="h-20">
+              <MdRestaurantMenu size={20} />
+            </div>
             <span className="text-xs">ORDER NOW</span>
           </Link>
           <button className="home-button">
-            <BsFillBellFill />
+            <div className="h-20">
+              <BsFillBellFill />
+            </div>
             <span className="text-xs">CALL WAITER</span>
           </button>
         </div>

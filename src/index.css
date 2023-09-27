@@ -3,10 +3,13 @@
 @tailwind utilities;
 
 @layer components {
-  .nav-button {
-    @apply w-1/4 flex flex-col justify-center items-center p-2 text-center text-white font-bold space-y-1;
-  }
   .home-button {
     @apply bg-orange rounded-lg p-5 h-20 text-center text-white font-bold flex flex-col justify-center items-center space-y-3;
+  }
+  .menu-nav-list {
+    @apply w-auto whitespace-nowrap px-2;
+  }
+  .nav-button {
+    @apply w-1/4 flex flex-col justify-center items-center p-2 text-center text-white font-bold space-y-1;
   }
 }
